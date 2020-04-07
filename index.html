@@ -191,6 +191,10 @@
                     <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-users fas-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Social Media</h2>
                 </div>
 
+                <div id="demo" class="w3-container w3-card w3-white w3-margin-bottom w3-animate-right">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-file fas-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Blog Post</h2>
+                </div>
+
                 <!-- End Right Column -->
             </div>
 
@@ -215,7 +219,22 @@
             titleScroll = window.setTimeout(scrolltitle, 170);
         }
         scrolltitle();
-    </script>
+      
+      
+      
+      
+      var x = new XMLHttpRequest();
+      x.open("GET", "https://medium.com/feed/@isetiabhakti", true);
+      x.onreadystatechange = function () {
+        if (x.readyState == 4 && x.status == 200)
+        {
+          var doc = x.responseXML;
+          // …
+        }
+      };
+      x.send(null);
+      
+document.getElementById("demo").innerHTML = xmlhttp.responseText;    </script>
 
 </body>
 
