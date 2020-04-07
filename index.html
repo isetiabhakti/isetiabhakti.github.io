@@ -223,18 +223,19 @@
       
       
       
-      var x = new XMLHttpRequest();
-      x.open("GET", "https://medium.com/feed/@isetiabhakti", true);
-      x.onreadystatechange = function () {
-        if (x.readyState == 4 && x.status == 200)
-        {
-          var doc = x.responseXML;
-          // …
-        }
-      };
-      x.send(null);
-      
-document.getElementById("demo").innerHTML = xmlhttp.responseText;    </script>
+var invocation = new XMLHttpRequest();
+var url = 'feed.xml';
+   
+function callOtherDomain() {
+  if(invocation) {    
+    invocation.open('GET', url, true);
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+    alert(invocation.textContent);
+  }
+}
+
+</script>
 
 </body>
 
