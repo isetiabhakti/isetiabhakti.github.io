@@ -232,7 +232,7 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ise
     var i;
     for (i = 0; i < res.length; i++) {
       console.log(res[i].title);
-      $("#demo").append("<p>"+ res[i].title +"</p>");
+      $("#demo").append("<p><a target='_blank' href='"+ res[i].link + "'>" + res[i].title +"</a></p>");
     }
   });
 
