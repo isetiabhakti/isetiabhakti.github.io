@@ -33,6 +33,7 @@
     <link rel="icon" href="https://cdn.glitch.com/9be2272f-b4da-46fa-95e7-d94a1cad4bc8%2Ficons8-checked-48.png?v=1581404444680
 " type="image/gif" sizes="16x16">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body class="w3-light-grey">
@@ -223,14 +224,16 @@
       
       
       
-fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@freecodecamp")
+fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@isetiabhakti")
   .then((res) => res.json())
   .then((data) => {
     const res = data.items;
-    const posts = res.filter(item => item.categories.length > 0).sort((a, b) => {
-      return new Date(b.pubDate) - new Date(a.pubDate);
-    });
-    console.log(posts.shift());
+    console.log(res.length);
+    var i;
+    for (i = 0; i < res.length; i++) {
+      console.log(res[i].title);
+      $("#demo").append("<p>"+ res[i].title +"</p>");
+    }
   });
 
       
