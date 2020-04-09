@@ -192,8 +192,11 @@
                     <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-users fas-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Social Media</h2>
                 </div>
 
-                <div id="demo" class="w3-container w3-card w3-white w3-margin-bottom w3-animate-right">
+                <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-right">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-file fas-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Blog Post</h2>
+                    <div id="demo" style="height: 590px; overflow-y: scroll;">
+                      
+                    </div>
                 </div>
 
                 <!-- End Right Column -->
@@ -225,6 +228,18 @@
       
       
 fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@isetiabhakti")
+  .then((res) => res.json())
+  .then((data) => {
+    const res = data.items;
+    console.log(res.length);
+    var i;
+    for (i = 0; i < res.length; i++) {
+      console.log(res[i].title);
+      $("#demo").append("<p><a target='_blank' href='"+ res[i].link + "'>" + res[i].title +"</a></p>");
+    }
+  });
+
+fetch("https://api.rss2json.com/v1/api.json?rss_url=https://isetiabhakti.blogspot.com/feeds/posts/default")
   .then((res) => res.json())
   .then((data) => {
     const res = data.items;
