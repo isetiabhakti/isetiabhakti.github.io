@@ -164,86 +164,28 @@
                     <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-school fas-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>SDIT Assalam, Bekasi</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005 - 2011</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>200 - 200</h6>
                         <hr>
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>SMPN 11 Kota Bekasi, Bekasi</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2014</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
                         <hr>
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>SMAN 1 Tambun Utara, Bekasi</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2017</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
                         <hr>
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Universitas Bhayangkara, Bekasi</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2022</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
                         <hr/>
                     </div>
                 </div>
 
                 <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-right">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-certificate fas-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certificate</h2>
-                  
-  <div class="w3-card-4" style="width:100%">
-    <header class="w3-container w3-light-grey">
-      <h3>Oracle Application Express (APEX) Hands On Lab | Oracle</h3>
-    </header><br/>
-    <div class="w3-container">
-      <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGmS4ZS9i2T6w/company-logo_100_100/0?e=1601510400&v=beta&t=ttSyiDZyyK4yVXFfQf-aWmwM3Lg0uzO7ppOtoecDUqA" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-      <p>Pengelan dasar-dasar penggunaan software Oracle APEX.</p><br>
-    </div>
-    <a target="_blank" href="https://isetiabhakti.github.io/Serifikat-Oracle-APEX.pdf"><button class="w3-button w3-block w3-teal">Terbit Oktober 2019 <sup>[PDF Copy]</sup></button></a>
-  </div>
-
-<hr/>  
-  
-
-  <div class="w3-card-4" style="width:100%">
-    <header class="w3-container w3-light-grey">
-      <h3>Dasar Azure Cloud | Dicoding</h3>
-    </header><br/>
-    <div class="w3-container">
-      <img src="https://media-exp1.licdn.com/dms/image/C510BAQG-dBAk8fBB6g/company-logo_100_100/0?e=1601510400&v=beta&t=qNRH5TN6HglG06rnhDrjEFFOLmqOSQACTBjPkD80K-s" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-      <p>Proses Penggunaan Microsoft Azure dengan fitur Hosting Cloud Computing.</p><br>
-    </div>
-    <a target="_blank" href="https://isetiabhakti.github.io/Sertifikat%20Kelulusan%20Belajar%20Dasar-Dasar%20Azure%20Cloud.pdf"><button class="w3-button w3-block w3-teal">Terbit Oktober 2019 <sup>[PDF Copy]</sup></button></a>
-  </div>
-
-<hr/>  
-  
-
-  <div class="w3-card-4" style="width:100%">
-    <header class="w3-container w3-light-grey">
-      <h3>HTML Fundamentals Course | SoloLearn</h3>
-    </header><br/>
-    <div class="w3-container">
-      <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHXcZlXhNCAJg/company-logo_100_100/0?e=1601510400&v=beta&t=mxUaMdBMmQtH5dyqrVOFwQzW849PXeA5D7umimJYDvA" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-      <p>Pembelajaran HTML Fundamental menyeluruh hingga penerapan Front-End menggunakan Javascript.</p><br>
-    </div>
-    <a target="_blank" href="https://isetiabhakti.github.io/Serifikat-Ilham-HTML.pdf"><button class="w3-button w3-block w3-teal">Terbit Agustus 2018 <sup>[PDF Copy]</sup></button></a>
-  </div>
-
-<hr/>  
-  
-
-
-  <div class="w3-card-4" style="width:100%">
-    <header class="w3-container w3-light-grey">
-      <h3>Olimpiade Sains Nasional | Dinas Pendidikan Kabupaten Bekasi</h3>
-    </header><br/>
-    <div class="w3-container">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Logo_Kabupaten_Bekasi.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-      <p>Berpartisipasi Sebagai Peserta Seleksi Lomba Olimpiade Tingkat Nasional (OSN) Tingat Kabupaten Bekasi Dalam Bidang Komputer.</p><br>
-    </div>
-    <a target="_blank" href="https://isetiabhakti.github.io/Sertifikat-Ilham-Olimpiade.pdf"><button class="w3-button w3-block w3-teal">Terbit Febuari 2016 <sup>[PDF Copy]</sup></button></a>
-  </div>
-
-<hr/>  
-  
-
                 </div>
               
                 <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-right">
