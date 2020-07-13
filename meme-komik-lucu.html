@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kumpulan Video Kucing Lucu | Sheva</title>
+	<link rel="icon" href="images/Sheva-Icon.ico">
+    <link rel="stylesheet" href="css/bootstrap-4.0.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/bootstrap-4.0.min.js"></script>
+	<style>
+.current {
+  color: black;
+}
+
+#pagin li {
+  display: inline-block;
+}
+
+
+.navbar-brand{
+	font-family: "Leckerli One";
+}
+
+
+h1 {
+	font-family: "Leckerli One";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26.4px;
+}
+
+h3 {
+	font-family: "Leckerli One";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
+}
+
+blockquote {
+	font-family: "Leckerli One";
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+pre {
+	font-family: "Leckerli One";
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+	</style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Kumpulan Video Kucing Lucu</a>
+	  <form class="form-inline">
+		<a href="http://sheva.my.id" target="_blank"><button class="btn btn-success" type="button">Sheva Homepage</button></a>
+	  </form>
+    </nav>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<style>
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.img-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+}
+</style>
+
+    <main>
+		<div class="row p-3">
+		  <div class="col-md-8">
+			  <div class="container" id="main">
+			  <script>
+
+fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?playlist_id=PLDNi8xPdtvmQ94TZcskZlQ4RGZh3IHSaQ")
+  .then((res) => res.json())
+  .then((data) => {
+    const res = data.items;
+    console.log(res.length);
+    var i;
+    for (i = 0; i < res.length; i++) {
+      console.log(res[i].title);
+      $( "#main" ).append( "<div class='jumbotron img-container'><a target='_blank' href='"+res[i].link+"'><h2>"+res[i].title+"</h2><br/>"+"<center><img class='img-fluid' src='"+res[i].thumbnail+"'/></center><div class='img-centered'>&#9658; </a></div></div><hr/>" );
+    }
+  });			  
+
+
+fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?playlist_id=PLESqbggHuMKt814S11reemr6VMTxgoVM4")
+  .then((res) => res.json())
+  .then((data) => {
+    const res = data.items;
+    console.log(res.length);
+    var i;
+    for (i = 0; i < res.length; i++) {
+      console.log(res[i].title);
+      $( "#main" ).append( "<div class='jumbotron img-container'><a target='_blank' href='"+res[i].link+"'><h2>"+res[i].title+"</h2><br/>"+"<center><img class='img-fluid' src='"+res[i].thumbnail+"'/></center><div class='img-centered'>&#9658; </a></div></div><hr/>" );
+    }
+  });			  
+
+
+
+fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?playlist_id=PL_0yGMU4hL3_gSItjpkrRtS6iIx4CEdzd")
+  .then((res) => res.json())
+  .then((data) => {
+    const res = data.items;
+    console.log(res.length);
+    var i;
+    for (i = 0; i < res.length; i++) {
+      console.log(res[i].title);
+      $( "#main" ).append( "<div class='jumbotron img-container'><a target='_blank' href='"+res[i].link+"'><h2>"+res[i].title+"</h2><br/>"+"<center><img class='img-fluid' src='"+res[i].thumbnail+"'/></center><div class='img-centered'>&#9658; </a></div></div><hr/>" );
+    }
+  });			  
+
+
+			  </script>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="jumbotron">
+			  
+			  <p><a href="."><button class="btn btn-lg btn-block btn-secondary">
+			  <img src="images/icons-svg/home-white.svg"/>
+			  </button></a></p>
+			  
+			  <hr/>
+			  <p><a href="https://www.linkedin.com/in/isetiabhakti/"><mark> JASA PEMBUATAN WEBSITE/ TOKO ONLINE GRATIS* (KLIK DI SINI) </mark></a></p>
+			  
+			  </div>		  </div>
+		</div>
+<!--<hr/><ul id="pagin" style="font-size:44px"></ul> PAGENARION-->
+    </main>
+	
+	<script>
+	//Pagination
+	/*
+	pageSize = 3;
+
+	var pageCount =  $(".row").length / pageSize;
+    
+     for(var i = 0 ; i<pageCount;i++){
+        
+       $("#pagin").append('<li><a href="#">'+(i+1)+'</a></li> - ');
+     }
+        $("#pagin li").first().find("a").addClass("current")
+    showPage = function(page) {
+	    $(".row").hide();
+	    $(".row").each(function(n) {
+	        if (n >= pageSize * (page - 1) && n < pageSize * page)
+	            $(this).show();
+	    });        
+	}
+    
+	showPage(1);
+
+	$("#pagin li a").click(function() {
+	    $("#pagin li a").removeClass("current");
+	    $(this).addClass("current");
+	    showPage(parseInt($(this).text())) 
+	});
+	*/
+
+	</script>
+	
+	<footer class="container-fluid">
+        <p class="text-muted">&copy; Sheva Setia. <a href="mailto:isetiabhakti@gmail.com">Mail Me!</a></p>
+    </footer> 
+
+  </body>
+</html>
