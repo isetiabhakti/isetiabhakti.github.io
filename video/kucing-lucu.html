@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kumpulan Video Kucing Lucu | Sheva</title>
+	  <link rel="icon" href="http://video-kucing-lucu.sheva.my.id/images/Sheva-Icon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<style>
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.img-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+}
+	</style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Kumpulan Video Kucing Lucu</a>
+	  <form class="form-inline">
+		<a href="http://sheva.my.id" target="_blank"><button class="btn btn-success" type="button">Sheva Homepage</button></a>
+	  </form>
+    </nav>
+    <main>
+		<div class="row p-3">
+		  <div class="col-md-8">
+			  <div class="container" id="main">
+			  <script>
+var vid = [			  
+"PLDNi8xPdtvmQ94TZcskZlQ4RGZh3IHSaQ",		  
+"PLESqbggHuMKt814S11reemr6VMTxgoVM4",		  
+"PL_0yGMU4hL3_gSItjpkrRtS6iIx4CEdzd"];
+
+for (j = 0; j < vid.length; j++) {
+  
+  var target = "https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?playlist_id="+vid[j];
+  
+  console.log(target);
+  
+  fetch(target)
+  .then((res) => res.json())
+  .then((data) => {
+    const res = data.items;
+    console.log(res.length);
+    var i;
+    for (i = 0; i < res.length; i++) {
+      console.log(res[i].title);
+      $( "#main" ).append( '<div class="jumbotron"><h2>'+res[i].title+'</h2><br/><center><iframe width="80%" height="350" src="https://www.youtube.com/embed/'+res[i].guid.substring(9)+'"></iframe></center></div><hr/>' );
+    }
+  });			  
+
+  
+  
+}
+		  
+			  </script>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="jumbotron">			  
+			  <p><a href="https://www.linkedin.com/in/isetiabhakti/"><mark> JASA PEMBUATAN WEBSITE/ TOKO ONLINE GRATIS* (KLIK DI SINI) </mark></a></p>
+			  </div>		  
+		   </div>
+		</div>
+    </main>
+	
+	
+	<footer class="container-fluid">
+        <p class="text-muted">&copy; Sheva Setia. <a href="mailto:isetiabhakti@gmail.com">Mail Me!</a></p>
+    </footer> 
+
+  </body>
+</html>
