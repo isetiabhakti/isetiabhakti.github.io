@@ -5,26 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kumpulan Video Kucing Lucu | Sheva</title>
-	<link rel="icon" href="images/Sheva-Icon.ico">
-    <link rel="stylesheet" href="css/bootstrap-4.0.min.css">
-    <link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.2.1.slim.min.js"></script>
-	<script src="js/bootstrap-4.0.min.js"></script>
+	<link rel="icon" href="http://video-kucing-lucu.sheva.my.id/images/Sheva-Icon.ico">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<style>
-.current {
-  color: black;
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
-
-#pagin li {
-  display: inline-block;
-}
-
-
-.navbar-brand{
-	font-family: "Leckerli One";
-}
-
-
+.img-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+}				
 h1 {
 	font-family: "Leckerli One";
 	font-size: 24px;
@@ -70,22 +66,6 @@ pre {
 		<a href="http://sheva.my.id" target="_blank"><button class="btn btn-success" type="button">Sheva Homepage</button></a>
 	  </form>
     </nav>
-	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-<style>
-.img-container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.img-centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 150px;
-}
-</style>
-
     <main>
 		<div class="row p-3">
 		  <div class="col-md-8">
@@ -103,34 +83,6 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feed
       $( "#main" ).append( "<div class='jumbotron img-container'><a target='_blank' href='"+res[i].link+"'><h2>"+res[i].title+"</h2><br/>"+"<center><img class='img-fluid' src='"+res[i].thumbnail+"'/></center><div class='img-centered'>&#9658; </a></div></div><hr/>" );
     }
   });			  
-
-
-fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?playlist_id=PLESqbggHuMKt814S11reemr6VMTxgoVM4")
-  .then((res) => res.json())
-  .then((data) => {
-    const res = data.items;
-    console.log(res.length);
-    var i;
-    for (i = 0; i < res.length; i++) {
-      console.log(res[i].title);
-      $( "#main" ).append( "<div class='jumbotron img-container'><a target='_blank' href='"+res[i].link+"'><h2>"+res[i].title+"</h2><br/>"+"<center><img class='img-fluid' src='"+res[i].thumbnail+"'/></center><div class='img-centered'>&#9658; </a></div></div><hr/>" );
-    }
-  });			  
-
-
-
-fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?playlist_id=PL_0yGMU4hL3_gSItjpkrRtS6iIx4CEdzd")
-  .then((res) => res.json())
-  .then((data) => {
-    const res = data.items;
-    console.log(res.length);
-    var i;
-    for (i = 0; i < res.length; i++) {
-      console.log(res[i].title);
-      $( "#main" ).append( "<div class='jumbotron img-container'><a target='_blank' href='"+res[i].link+"'><h2>"+res[i].title+"</h2><br/>"+"<center><img class='img-fluid' src='"+res[i].thumbnail+"'/></center><div class='img-centered'>&#9658; </a></div></div><hr/>" );
-    }
-  });			  
-
 
 			  </script>
 			  </div>
